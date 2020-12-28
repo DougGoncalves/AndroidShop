@@ -9,11 +9,7 @@ import androidx.core.content.ContextCompat
 import br.com.fiap.R
 import com.google.android.material.snackbar.Snackbar
 
-class BaseActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_base)
-    }
+open class BaseActivity : AppCompatActivity() {
 
     fun showErrorSnackBar(message: String, errorMessage: Boolean) {
         val snackBar =

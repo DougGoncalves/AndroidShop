@@ -19,4 +19,15 @@
     <string name="already_have_an_account">Já possui uma conta ?</string>
     <string name="login">Login</string>
 
+
+
+    <string name="err_msg_enter_first_name">Por favor, insira um nome válido</string>
+    <string name="err_msg_enter_last_name">Insira um sobrenome</string>
+    <string name="err_msg_enter_email">Insira um email válido</string>
+    <string name="err_msg_enter_password">Insira uma senha</string>
+    <string name="err_msg_enter_confirm_password">Confirme sua senha</string>
+    <string name="err_msg_password_and_confirm_password">Senhas não conferem</string>
+    <string name="err_msg_agree_terms_and_condition">Por favor, aceite os termos de uso</string>
+
+
 </resources>
