@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyShop</string>
+    <string name="content_description">image</string>
+    <string name="title_login">LOGIN</string>
+    <string name="et_hint_email_id">Email</string>
+    <string name="et_hint_password">Senha</string>
+    <string name="lbl_forgot_password">Esqueceu sua senha ?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="don_t_have_an_account">Não possui uma conta ?</string>
+    <string name="register">Registro</string>
+
 </resources>
