@@ -9,4 +9,14 @@
     <string name="don_t_have_an_account">Não possui uma conta ?</string>
     <string name="register">Registro</string>
 
+    <string name="create_an_account">CRIE SUA CONTA</string>
+
+    <string name="hint_last_name">Sobrenome</string>
+    <string name="hint_first_name">Nome</string>
+    <string name="et_hint_confirm_password">Confirme sua senha</string>
+    <string name="i_agree_to_the_terms_and_condition">Concordo com os <u>Termos e Condições</u></string>
+    <string name="btn_lbl_register">Registrar</string>
+    <string name="already_have_an_account">Já possui uma conta ?</string>
+    <string name="login">Login</string>
+
 </resources>
