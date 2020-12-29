@@ -35,6 +35,8 @@
     <string name="btn_lbl_submit">Enviar</string>
     <string name="email_sent_sucess">E-mail enviado com sucesso!</string>
 
+    <string name="register_success">Usuário cadastrado com sucesso</string>
+
 
 
 
