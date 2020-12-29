@@ -99,12 +99,17 @@ class RegisterActivity : BaseActivity() {
     private fun registerUser() {
 
         if (validateRegisterDetails()) {
+
+            showProgressDialog(resources.getString(R.string.please_wait))
+
             val email: String = et_email.text.toString().trim { it <= ' '}
             val password: String = et_password.text.toString().trim { it <= ' '}
 
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(
                     OnCompleteListener<AuthResult> { task ->
+
+                        hideProgressDialog()
 
                         if(task.isSuccessful) {
 
@@ -114,6 +119,11 @@ class RegisterActivity : BaseActivity() {
                                 "Você se registrou com sucesso. Seu id é ${firebaseUser.uid}",
                                 false
                             )
+
+                            FirebaseAuth.getInstance().signOut()
+                            finish()
+
+
                         } else {
                             showErrorSnackBar(task.exception!!.message.toString(), true)
                         }

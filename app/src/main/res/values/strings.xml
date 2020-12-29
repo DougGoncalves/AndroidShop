@@ -29,5 +29,7 @@
     <string name="err_msg_password_and_confirm_password">Senhas não conferem</string>
     <string name="err_msg_agree_terms_and_condition">Por favor, aceite os termos de uso</string>
 
+    <string name="please_wait">Aguarde&#8230;</string>
+
 
 </resources>
