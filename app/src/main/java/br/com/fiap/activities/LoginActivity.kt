@@ -9,7 +9,11 @@ import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import br.com.fiap.R
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_login.et_email
+import kotlinx.android.synthetic.main.activity_login.et_password
+import kotlinx.android.synthetic.main.activity_register.*
 
 class LoginActivity : BaseActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +29,12 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN
             )
         }
+
+        tv_forgot_password.setOnClickListener (this)
+
+        btn_login.setOnClickListener(this)
+
+        tv_register.setOnClickListener(this)
     }
 
     override fun onClick(v: View?){
@@ -33,10 +43,12 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
 
 
                 R.id.tv_forgot_password ->{
+                    val intent = Intent(this@LoginActivity, ForgotPasswordActivity::class.java)
+                    startActivity(intent)
                 }
 
                 R.id.btn_login -> {
-                    validateLoginDetails()
+                    logInRegisteredUser()
                 }
 
                 R.id.tv_register -> {
@@ -63,5 +75,31 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
                 true
             }
         }
+    }
+
+    private fun logInRegisteredUser(){
+
+        if(validateLoginDetails()) {
+
+            showProgressDialog(resources.getString(R.string.please_wait))
+
+            val email = et_email.text.toString().trim { it <= ' '}
+            val password = et_password.text.toString().trim { it <= ' '}
+
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email,password)
+                    .addOnCompleteListener{ task ->
+
+                        hideProgressDialog()
+
+                        if(task.isSuccessful) {
+                            showErrorSnackBar("Você está logado!", false)
+                        } else {
+
+                            showErrorSnackBar(task.exception!!.message.toString(), true)
+                        }
+
+                    }
+        }
+
     }
 }

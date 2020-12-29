@@ -20,7 +20,6 @@
     <string name="login">Login</string>
 
 
-
     <string name="err_msg_enter_first_name">Por favor, insira um nome válido</string>
     <string name="err_msg_enter_last_name">Insira um sobrenome</string>
     <string name="err_msg_enter_email">Insira um email válido</string>
@@ -30,6 +29,13 @@
     <string name="err_msg_agree_terms_and_condition">Por favor, aceite os termos de uso</string>
 
     <string name="please_wait">Aguarde&#8230;</string>
+
+    <string name="title_forgot_password">Esqueceu sua senha ?</string>
+    <string name="forgot_password_title_description">Insira seu email cadastrado que iremos enviar um email para o reset de sua senha</string>
+    <string name="btn_lbl_submit">Enviar</string>
+    <string name="email_sent_sucess">E-mail enviado com sucesso!</string>
+
+
 
 
 </resources>
