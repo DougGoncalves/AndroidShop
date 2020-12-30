@@ -12,6 +12,7 @@ import android.view.WindowManager
 import br.com.fiap.R
 import br.com.fiap.firestore.FirestoreClass
 import br.com.fiap.models.User
+import br.com.fiap.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.et_email
@@ -48,7 +49,14 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         Log.i("Last Name:  ", user.lastName)
         Log.i("Email: ", user.email)
 
-        startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+        if (user.profileCompleted == 0) {
+
+            val intent = Intent(this@LoginActivity, UserProfileActivity::class.java)
+            intent.putExtra(Constants.EXTRA_USER_DETAILS, user)
+            startActivity(intent)
+        } else {
+            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+        }
         finish()
     }
 

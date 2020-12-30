@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyShop">
         <activity
+            android:name=".activities.UserProfileActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".activities.ForgotPasswordActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity android:name=".activities.BaseActivity" />
         <activity
             android:name=".activities.RegisterActivity"

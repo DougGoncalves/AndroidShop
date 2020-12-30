@@ -37,7 +37,11 @@
 
     <string name="register_success">Usuário cadastrado com sucesso</string>
 
-
+    <string name="title_complete_profile">Perfil</string>
+    <string name="et_hint_mobile_number">Número Celular</string>
+    <string name="rb_lbl_male">Masculino</string>
+    <string name="rb_lbl_female">Feminino</string>
+    <string name="btn_lbl_save">Salvar</string>
 
 
 </resources>

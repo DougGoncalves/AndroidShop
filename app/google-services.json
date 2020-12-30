@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "400044678556",
-    "project_id": "myshop-d989c",
-    "storage_bucket": "myshop-d989c.appspot.com"
+    "project_number": "1047824158060",
+    "project_id": "androidshop-d77bb",
+    "storage_bucket": "androidshop-d77bb.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:400044678556:android:9c1a56226f5ef6bf54fc59",
+        "mobilesdk_app_id": "1:1047824158060:android:4fd2f35d137fdf9d7f7749",
         "android_client_info": {
-          "package_name": "br.com.fiap.myshop"
+          "package_name": "br.com.fiap"
         }
       },
       "oauth_client": [
         {
-          "client_id": "400044678556-jts0q2b067r2doq3e5fn04lmrfcic1g3.apps.googleusercontent.com",
+          "client_id": "1047824158060-12s4648dg84ccmf6epda1rmo0uvpkbtm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fiap",
+            "certificate_hash": "c27b0a42cd1f19bf1ac3fb611f44362abe25af9c"
+          }
+        },
+        {
+          "client_id": "1047824158060-uido4dclontpt9i0drgcmmjntu5ac20i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAVvMaMR_9xmh_rhs-umCyRK_3hKsTIcuA"
+          "current_key": "AIzaSyDeGIrbOknE6YXKQ8Kfalm0Nr8nJiT_qDQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "400044678556-jts0q2b067r2doq3e5fn04lmrfcic1g3.apps.googleusercontent.com",
+              "client_id": "1047824158060-uido4dclontpt9i0drgcmmjntu5ac20i.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
