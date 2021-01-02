@@ -43,5 +43,135 @@
     <string name="rb_lbl_female">Feminino</string>
     <string name="btn_lbl_save">Salvar</string>
 
+    <string name="read_storage_permission_denied">Oops, você negou permissão para salvar. Você pode alterar suas permissões em configurações</string>
+    <string name="image_selection_failed">Seleção de imagem falhou!</string>
+
+    <string name="err_msg_enter_mobile_number">Por favor, ensira seu número de telefone.</string>
+
+    <string name="msg_profile_update_success">Seu perfil foi alterado com sucesso</string>
+
+
+    <string name="title_activity_dashboard">MainActivity</string>
+
+
+    <string name="title_dashboard">Painel</string>
+    <string name="title_products">Produtos</string>
+    <string name="title_orders">Pedidos</string>
+
+    <string name="please_click_back_again_to_exit">Por favor, clique novamente para sair</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <string name="title_settings">CONFIGURAÇÕES</string>
+    <string name="lbl_edit">Editar</string>
+    <string name="lbl_addresses">Endereços</string>
+    <string name="btn_lbl_logout">Logout</string>
+
+    <string name="title_edit_profile">EDITAR PERFIL</string>
+
+    <string name="action_add_product">Adicionar Produto</string>
+
+    <string name="title_add_product">ADICIONAR PRODUTO</string>
+    <string name="et_hint_product_title">Nome Produto</string>
+    <string name="et_hint_product_price">Preço ($)</string>
+    <string name="et_hint_product_description">Descrição</string>
+    <string name="et_hint_product_quantity">Quantidade</string>
+
+    <string name="err_msg_select_product_image">Por favor, selecione uma imagem.</string>
+    <string name="err_msg_enter_product_title">Por favor, insira um nome válido</string>
+    <string name="err_msg_enter_product_price">Por favor, insira o preço</string>
+    <string name="err_msg_enter_product_description">Por favor, insira uma descrição</string>
+    <string name="err_msg_enter_product_quantity">Por favor, insira a quantidade</string>
+
+    <string name="product_uploaded_success_message">Seu produto foi cadastrado com sucesso.</string>
+    <string name="no_products_added_yet">Nenhum produto adicionado!</string>
+    <string name="no_dashboard_item_found">Nenhum item encontrado!</string>
+
+    <string name="product_delete_success_message">Seu produto foi deletado com sucesso</string>
+    <string name="delete_dialog_title">Deletar</string>
+    <string name="delete_dialog_message">Tem certeza que quer deletar esse produto ?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <string name="title_product_details">DETALHES DO PRODUTO</string>
+    <string name="lbl_product_description">Descrição</string>
+    <string name="lbl_product_details_stock_quantity">Quantidade em Estoque</string>
+
+    <string name="btn_lbl_add_to_cart">ADICIONAR AO CARRINHO</string>
+    <string name="success_message_item_added_to_cart">O produto foi adicionado ao seu carrinho</string>
+    <string name="btn_lbl_go_to_cart">IR PARA CARRINHO</string>
+
+    <string name="title_my_cart">MEU CARRINHO</string>
+    <string name="no_cart_item_found">Nenhum item encontrado no seu carrinho</string>
+    <string name="lbl_subtotal">Subtotal</string>
+    <string name="lbl_shipping_charge">Taxas</string>
+    <string name="lbl_total_amount">Total </string>
+    <string name="btn_lbl_checkout">Checkout</string>
+    <string name="action_cart">Meu Carrinho</string>
+
+    <string name="lbl_out_of_stock">ESGOTADOK</string>
+    <string name="msg_item_removed_successfully">Item removido com sucesso</string>
+
+    <string name="msg_for_available_stock">Estoque disponível: %1$s!. Você não pode adicionar mais este item</string>
+
+    <string name="title_address_list">LISTA DE ENDEREÇOS</string>
+    <string name="no_address_found">Nenhum endereço encontrado</string>
+    <string name="lbL_add_address">Adicionar Endereço</string>
+
+    <string name="title_add_address">ADICIONAR ENDEREÇO</string>
+    <string name="hint_full_name">Nome Completo</string>
+    <string name="hint_phone_number">Número Telefone</string>
+    <string name="hint_address">Endereço</string>
+    <string name="hint_zip_code">CEP</string>
+    <string name="hint_additional_note">Referência</string>
+    <string name="hint_other_details">Outros detalhes</string>
+    <string name="lbl_home">CASA</string>
+    <string name="lbl_office">TRABALHO</string>
+    <string name="lbl_other">OUTRO</string>
+
+
+    <string name="err_msg_please_enter_full_name">Por favor, insira seu nome</string>
+    <string name="err_msg_please_enter_phone_number">Por favor, insira seu telefone</string>
+    <string name="err_msg_please_enter_address">Por favor, insira seu endereço</string>
+    <string name="err_msg_please_enter_zip_code">Por favor, insira seu cep</string>
+    <string name="err_msg_please_enter_other_details">Por favor, insira seus detalhes</string>
+
+    <string name="err_your_address_added_successfully">Seu endereço foi adicionado com sucesso!</string>
+
+    <string name="title_edit_address">EDITAR ENDEREÇO</string>
+    <string name="btn_lbl_update">ATUALIZAR</string>
+    <string name="msg_your_address_updated_successfully">Seu endereço foi atualizado com sucesso</string>
+
+    <string name="err_your_address_deleted_successfully">Seu endereço foi deletado com sucesso.</string>
+    <string name="title_select_address">SELECIONAR ENDEREÇO</string>
+
+    <string name="title_checkout">CHECKOUT</string>
+    <string name="checkout_lbl_product_items">Items</string>
+    <string name="checkout_lbl_selected_address">Endereço</string>
+    <string name="checkout_lbl_items_receipt">Recibo</string>
+    <string name="lbl_payment_mode">Método de Pagamento</string>
+    <string name="lbl_cash_on_delivery">NA ENTREGA</string>
+    <string name="btn_lbl_place_order">FAZER PEDIDO</string>
+
+    <string name="no_orders_placed_yet">Nenhum pedido feito</string>
+
+    <string name="title_my_order_details">MEUS PEDIDOS</string>
+    <string name="order_details_lbl">Detalhes do Pedido</string>
+    <string name="order_details_lbl_order_id">Número do Pedido</string>
+    <string name="order_details_lbl_order_date">Data</string>
+    <string name="order_details_lbl_order_status">Status</string>
+    <string name="order_status_pending">Pendente</string>
+    <string name="order_details_lbl_shipping_address">Endereço de Envio</string>
+
+    <string name="order_status_in_process">Em processamento</string>
+    <string name="order_status_delivered">Entregue</string>
+
+    <string name="title_sold_products">Produtos Vendidos</string>
+    <string name="no_products_sold_out_yet">Nenhum Produto Vendido!</string>
+
+    <string name="title_sold_product_details">PRODUTOS VENDIDOS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>
