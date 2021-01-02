@@ -5,13 +5,11 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
-
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Toast
-
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import br.com.fiap.R
@@ -19,11 +17,6 @@ import br.com.fiap.firestore.FirestoreClass
 import br.com.fiap.models.User
 import br.com.fiap.utils.Constants
 import br.com.fiap.utils.GlideLoader
-
-import kotlinx.android.synthetic.main.activity_register.*
-import kotlinx.android.synthetic.main.activity_register.et_email
-import kotlinx.android.synthetic.main.activity_register.et_first_name
-import kotlinx.android.synthetic.main.activity_register.et_last_name
 import kotlinx.android.synthetic.main.activity_user_profile.*
 import java.io.IOException
 
@@ -35,20 +28,16 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
 
     private var mUserProfileImageURL: String = ""
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_profile)
 
         if (intent.hasExtra(Constants.EXTRA_USER_DETAILS)) {
-
             mUserDetails = intent.getParcelableExtra(Constants.EXTRA_USER_DETAILS)!!
         }
 
         if (mUserDetails.profileCompleted == 0) {
-
             tv_title.text = resources.getString(R.string.title_complete_profile)
-
 
             et_first_name.isEnabled = false
             et_first_name.setText(mUserDetails.firstName)
@@ -60,15 +49,11 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
             et_email.setText(mUserDetails.email)
         } else {
 
-
             setupActionBar()
-
 
             tv_title.text = resources.getString(R.string.title_edit_profile)
 
-
             GlideLoader(this@UserProfileActivity).loadUserPicture(mUserDetails.image, iv_user_photo)
-
 
             et_first_name.setText(mUserDetails.firstName)
             et_last_name.setText(mUserDetails.lastName)
@@ -117,6 +102,7 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
 
                     if (validateUserProfileDetails()) {
 
+                        // Show the progress dialog.
                         showProgressDialog(resources.getString(R.string.please_wait))
 
                         if (mSelectedImageFileUri != null) {
@@ -182,23 +168,10 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
                 }
             }
         } else if (resultCode == Activity.RESULT_CANCELED) {
-
             Log.e("Request Cancelled", "Image selection cancelled")
         }
     }
 
-  fun validateUserProfileDetails(): Boolean {
-        return when {
-
-            TextUtils.isEmpty(et_mobile.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar(resources.getString(R.string.err_msg_enter_mobile_number), true)
-                false
-            }
-            else -> {
-                true
-            }
-        }
-    }
 
     private fun setupActionBar() {
 
@@ -213,6 +186,19 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
         toolbar_user_profile_activity.setNavigationOnClickListener { onBackPressed() }
     }
 
+
+    private fun validateUserProfileDetails(): Boolean {
+        return when {
+
+            TextUtils.isEmpty(et_mobile.text.toString().trim { it <= ' ' }) -> {
+                showErrorSnackBar(resources.getString(R.string.err_msg_enter_mobile_number), true)
+                false
+            }
+            else -> {
+                true
+            }
+        }
+    }
 
     private fun updateUserProfileDetails() {
 
