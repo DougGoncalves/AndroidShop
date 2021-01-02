@@ -85,7 +85,7 @@
             android:name=".activities.CheckoutActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        
+
         <activity
             android:name=".activities.MyOrderDetailsActivity"
             android:screenOrientation="portrait"
