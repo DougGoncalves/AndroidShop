@@ -16,7 +16,6 @@ import br.com.fiap.models.Address
 import br.com.fiap.utils.Constants
 import kotlinx.android.synthetic.main.item_address_layout.view.*
 
-
 open class AddressListAdapter(
     private val context: Context,
     private var list: ArrayList<Address>,

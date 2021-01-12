@@ -193,7 +193,6 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
 
     private fun uploadProductDetails() {
 
-        // Get the logged in username from the SharedPreferences that we have stored at a time of login.
         val username =
             this.getSharedPreferences(Constants.PREFERENCES, Context.MODE_PRIVATE)
                 .getString(Constants.LOGGED_IN_USERNAME, "")!!

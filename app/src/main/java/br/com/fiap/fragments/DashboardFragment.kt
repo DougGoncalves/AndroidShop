@@ -63,7 +63,6 @@ class DashboardFragment : BaseFragment() {
     }
 
     private fun getDashboardItemsList() {
-        // Show the progress dialog.
         showProgressDialog(resources.getString(R.string.please_wait))
 
         FirestoreClass().getDashboardItemsList(this@DashboardFragment)
@@ -95,7 +94,6 @@ class DashboardFragment : BaseFragment() {
                     startActivity(intent)
                 }
             })
-            // END
         } else {
             rv_dashboard_items.visibility = View.GONE
             tv_no_dashboard_items_found.visibility = View.VISIBLE

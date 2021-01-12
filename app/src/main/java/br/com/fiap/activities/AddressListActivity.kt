@@ -23,9 +23,9 @@ class AddressListActivity : BaseActivity() {
     private var mSelectAddress: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        //This call the parent constructor
+
         super.onCreate(savedInstanceState)
-        // This is used to align the xml view to this class
+
         setContentView(R.layout.activity_address_list)
 
         if (intent.hasExtra(Constants.EXTRA_SELECT_ADDRESS)) {
@@ -112,7 +112,6 @@ class AddressListActivity : BaseActivity() {
                 val deleteSwipeHandler = object : SwipeToDeleteCallback(this) {
                     override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
 
-                        // Show the progress dialog.
                         showProgressDialog(resources.getString(R.string.please_wait))
 
                         FirestoreClass().deleteAddress(
@@ -132,7 +131,6 @@ class AddressListActivity : BaseActivity() {
 
 
     fun deleteAddressSuccess() {
-
 
         hideProgressDialog()
 

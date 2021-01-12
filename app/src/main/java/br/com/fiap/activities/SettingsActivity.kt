@@ -21,7 +21,6 @@ class SettingsActivity : BaseActivity(), View.OnClickListener {
 
         setupActionBar()
 
-
         tv_edit.setOnClickListener(this@SettingsActivity)
         btn_logout.setOnClickListener(this@SettingsActivity)
         ll_address.setOnClickListener(this@SettingsActivity)

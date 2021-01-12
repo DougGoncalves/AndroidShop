@@ -53,7 +53,7 @@ class ProductsFragment : BaseFragment() {
     }
 
     private fun getProductListFromFireStore() {
-        // Show the progress dialog.
+
         showProgressDialog(resources.getString(R.string.please_wait))
 
         FirestoreClass().getProductsList(this@ProductsFragment)

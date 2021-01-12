@@ -619,7 +619,6 @@ class FirestoreClass {
 
         val writeBatch = mFireStore.batch()
 
-        // Prepare the sold product details
         for (cart in cartList) {
 
             val soldProduct = SoldProduct(

@@ -29,7 +29,7 @@ class OrdersFragment : BaseFragment() {
     }
 
     private fun getMyOrdersList() {
-        // Show the progress dialog.
+
         showProgressDialog(resources.getString(R.string.please_wait))
 
         FirestoreClass().getMyOrdersList(this@OrdersFragment)

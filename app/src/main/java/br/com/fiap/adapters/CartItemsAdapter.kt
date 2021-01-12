@@ -117,7 +117,6 @@ open class CartItemsListAdapter(
 
                     itemHashMap[Constants.CART_QUANTITY] = (cartQuantity + 1).toString()
 
-                    // Show the progress dialog.
                     if (context is CartListActivity) {
                         context.showProgressDialog(context.resources.getString(R.string.please_wait))
                     }

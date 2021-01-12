@@ -145,9 +145,7 @@ class ProductDetailsActivity : BaseActivity(), View.OnClickListener {
 
     fun productExistsInCart() {
 
-
         hideProgressDialog()
-
 
         btn_add_to_cart.visibility = View.GONE
 
